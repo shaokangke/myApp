@@ -1,0 +1,24 @@
+.column {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .box {
+    width: 40px;
+    height: 40px;
+    background-color: #cacaca;
+    margin-right: 10px;
+  }
+  
+  .text {
+    font-size: 16px;
+    color: #fff;
+    padding-right: 20px;
+  }
+  

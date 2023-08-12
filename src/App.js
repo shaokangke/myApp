@@ -11,6 +11,8 @@ import MenuTwo from './pages/ menuTwo/index';
 import MenuThree from './pages/ menuThree/index';
 import MenuFour from './pages/ menuFour/index';
 import Home from './pages/home/index'
+import List from './components/list/index'
+
 
 
 
@@ -104,7 +106,7 @@ const App = () => {
   const onClick = (e) => {
 
     console.log(e);
-    setTitle(`${e.keyPath[1]}${'-'}${k(e.keyPath[0])}`)
+    setTitle(`${e.keyPath[1]}${'/'}${k(e.keyPath[0])}`)
     navigate(e.key, { replace: true })
     localStorage.setItem('selectedMenu', e.keyPath[0]);
 
@@ -128,6 +130,15 @@ const App = () => {
           style={{
             padding: 0,
             paddingLeft: 30,
+            // background: colorBgContainer,
+          }}
+        >
+          <List/>
+        </Header>
+        <Header
+          style={{
+            padding: 0,
+            paddingLeft: 30,
             background: colorBgContainer,
           }}
         >{title}</Header>
@@ -144,9 +155,9 @@ const App = () => {
           </Breadcrumb>
           <div
             style={{
-              padding: 24,
+              // padding: 24,
               minHeight: '75vh',
-              background: colorBgContainer,
+              // background: colorBgContainer,
             }}
           >
             <Routes>
@@ -164,7 +175,7 @@ const App = () => {
             textAlign: 'center',
           }}
         >
-          感谢面试官的code Review
+          感谢您的检阅
         </Footer>
       </Layout>
     </Layout>
